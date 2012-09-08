@@ -5,17 +5,14 @@
  */
 package us.rothmichaels.testing.matchers;
 
-import java.util.Arrays;
 import java.util.Map;
 import java.util.Set;
 
-import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;
 import org.hamcrest.Factory;
 import org.hamcrest.TypeSafeMatcher;
 import org.hamcrest.core.IsEqual;
 
-import com.sun.org.apache.xerces.internal.impl.xs.identity.Selector.Matcher;
 
 /**
  * <p>A matcher for comparing Maps.
@@ -80,6 +77,13 @@ public class MapEquals<K,V> extends TypeSafeMatcher<Map<K,V>> {
 		description.appendText("<"+this.expectedMap+">");
 	}
 
+	/**
+	 * Factory to create a map matcher.
+	 * 
+	 * @param expected	expected map
+	 * 
+	 * @return			the matcher
+	 */
 	@Factory
 	public static <K,V> MapEquals<K, V> mapEquals(Map<K,V> expected) {
 		return new MapEquals<K, V>(expected);
