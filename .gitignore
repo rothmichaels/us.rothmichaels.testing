@@ -1,6 +1,11 @@
+# Binary Files #
+################
+classes/
+_classes/
+bin/
+target/
+*.jar
 *.class
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# OS Files
+.DS_Store
