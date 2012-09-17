@@ -31,9 +31,11 @@ public class MapEquals<K,V> extends TypeSafeMatcher<Map<K,V>> {
 	
 
 	/**
-	 * @param expectedMap
+	 * Create a map matcher.
+	 * 
+	 * @param expectedMap map to match against
 	 */
-	MapEquals(Map<K, V> expectedMap) {
+	private MapEquals(Map<K, V> expectedMap) {
 		super();
 		this.expectedMap = expectedMap;
 	}
