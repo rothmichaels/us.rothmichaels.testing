@@ -44,7 +44,7 @@ You must not remove this notice, or any other, from this software.
   <modelVersion>4.0.0</modelVersion>
   <groupId>us.rothmichaels</groupId>
   <artifactId>us.rm-testing</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>Roth's Testing Tools</name>
   <description>Unit test tools</description>
   
@@ -56,7 +56,7 @@ You must not remove this notice, or any other, from this software.
     <connection>scm:git:git://git@github.com/rothmichaels/${p.git.repo}.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/rothmichaels/${p.git.repo}.git</developerConnection>
     <url>http://github.com/rothmichaels/${p.git.repo}</url>
-    <tag>HEAD</tag>
+    <tag>us.rm-testing-1.0.0</tag>
   </scm>
 
   <url>http://github.com/rothmichaels/${p.git.repo}</url>
