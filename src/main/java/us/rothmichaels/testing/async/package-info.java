@@ -1,6 +1,6 @@
 /*
- * AsyncTesterTests.java
- *
+ * package-info.java
+ * 
  * Copyright (c) 2014 Roth Michaels. All rights reserved.
  *
  * The use and distribution terms for this software are covered by the
@@ -32,47 +32,13 @@
  * DAMAGES.
  *
  * You must not remove this notice, or any other, from this software.
- *
- * Mar 4, 2014 
+ * 
+ * March 7, 2014
  */
-package us.rothmichaels.testing.async;
-
-import static org.junit.Assert.*;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 
 /**
- * Tests {@link us.rothmichaels.testing.async.AsyncTester}.
- *
- * @author Roth Michaels 
- * (<i><a href="mailto:roth@rothmichaels.us">roth@rothmichaels.us</a></i>)
- *
+ * Tools for running multithreaded tests.
+ * 
+ * @author Roth Michaels (<i><a href="mailto:roth@rothmichaels.us">roth@rothmichaels.us</a></i>)
  */
-public class AsyncTesterTests {
-
-
-	/**
-	 * Test that AssertionError thrown from another
-	 * thread is passed to main thread when calling {@code verify()}.
-	 */
-	@Test(expected=AssertionError.class)
-	public void test() {
-		AsyncTester tester = new AsyncTester(new Runnable() {
-			@Override
-			public void run() {
-				try {
-					Thread.sleep(1000);
-					fail("Done waiting, so fail.");
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-			}
-		});
-		
-		tester.runTest();
-		tester.verify();
-	}
-
-}
+package us.rothmichaels.testing.async;
